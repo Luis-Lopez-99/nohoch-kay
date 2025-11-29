@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú - El Gran Nohoch Kay</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- HEADER / NAV (mismo que index) -->
+    <header class="main-header">
+        <nav class="navbar container">
+            <div class="logo-text">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo_nav_96.webp" alt="Logo El Gran Nohoch Kay" class="brand-logo-nav">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html" class="active">Menú</a></li>
+                <li><a href="index.html#reservaciones">Reservaciones</a></li>
+                <li><a href="index.html#galeria">Galería</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO MENÚ -->
+    <main class="section container menu-page">
+        <!--<h1>Menú en fotos</h1>-->
+        <div class="menu">
+            <img src="img/menu/menu-1.webp" alt="Menú">
+            <br>
+            <img src="img/menu/menu-2.webp" alt="Menú">
+            <br>
+            <img src="img/menu/menu-3.webp" alt="Menú">
+            <br>
+            <img src="img/menu/menu-4.webp" alt="Menú">
+            <br>
+            <img src="img/menu/menu-5.webp" alt="Menú">
+            <br>
+            <img src="img/menu/menu-6.webp" alt="Menú">
+            <br>
+            <img src="img/menu/menu-7.webp" alt="Menú">
+            <br>
+            <img src="img/menu/menu-8.webp" alt="Menú">
+            <br>
+        </div>
+        <!--
+        <div class="menu-note">
+            <p>
+                Hola!, pregunta sobre nuestras<strong>promociones</strong>.
+            </p>
+        </div>
+        -->
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Proyecto para Adriana Galaviz Lopez - "El Gran Nohoch Kay" -
+                <strong>Desarrollado por el ING. Luis Lopez.</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

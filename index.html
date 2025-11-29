@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Gran Nohoch Kay - Restaurante</title>
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- HEADER Y NAV -->
+    <header class="main-header">
+        <nav class="navbar container">
+            <div class="logo-text">
+                <a href="index.html" class="logo-link">
+                    <!-- logo a 96px-->
+                    <img src="img/logo_nav_96.webp" alt="Logo El Gran Nohoch Kay" class="brand-logo-nav">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="index.html#reservaciones">Reservaciones</a></li>
+                <li><a href="index.html#galeria">Galería</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content container">
+            <div class="hero-logo">
+                <!-- logo -->
+                <img src="img/logo.webp" alt="El Gran Nohoch Kay - Big Fish">
+            </div>
+
+            <p class="hero-subtitle">
+                Bienvenidos al sabor del mar, tradición y excelencia
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#reservaciones" class="btn-primary">Reservar ahora</a>
+                <a href="menu.html" class="btn-secondary">Ver menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENÚ (DESCRIPCIÓN) -->
+    <section id="menu-resumen" class="section container">
+        <h2>Nuestro menú</h2>
+        <p>
+            Del mar a tu mesa: pescados, mariscos frescos, platillos tradicionales y
+            especialidades de la casa. Consulta el menú completo en fotos:
+        </p>
+        <a href="menu.html" class="btn-outline">Ver menú en fotos</a>
+    </section>
+
+    <!-- RESERVACIONES -->
+    <section id="reservaciones" class="section section-alt">
+        <div class="container">
+            <h2>Reservaciones</h2>
+            <p>
+                Haz tu reservación para asegurar tu lugar frente al mar. Llámanos, mándanos WhatsApp
+                o completa el siguiente formulario.
+            </p>
+
+            <form class="reservation-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                </div>
+                <div class="form-row">
+                    <input type="date" required>
+                    <input type="time" required>
+                </div>
+                <div class="form-row">
+                    <input type="number" min="1" placeholder="Número de personas" required>
+                </div>
+                <button type="submit" class="btn-primary">
+                    Enviar solicitud
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section container">
+        <h2>Galería</h2>
+        <p>
+            Un vistazo a la experiencia: el mar, el ambiente y algunos de nuestros platillos.
+        </p>
+
+        <div class="carousel">
+            <button class="carousel-btn prev" aria-label="Foto anterior">‹</button>
+
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <!-- imagenes del carousel v1 -->
+                    <li class="carousel-slide is-selected">
+                        <img src="img/galeria/img-promo-1.webp" alt="1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-2.webp" alt="2">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-3.webp" alt="3">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-4.webp" alt="4">
+                    </li>
+                    <li class="carousel-slide is-selected">
+                        <img src="img/galeria/img-promo-5.webp" alt="5">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-6.webp" alt="6">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-7.webp" alt="7">
+                    </li>
+                    <!-- isi esta lento quitar desde aqui-->
+
+                    <li class="carousel-slide is-selected">
+                        <img src="img/galeria/img-promo-8.webp" alt="1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-9.webp" alt="2">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-10.webp" alt="3">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-11.webp" alt="4">
+                    </li>
+                    <li class="carousel-slide is-selected">
+                        <img src="img/galeria/img-promo-12.webp" alt="5">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-13.webp" alt="6">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-14.webp" alt="7">
+                    </li>
+
+                    <li class="carousel-slide is-selected">
+                        <img src="img/galeria/img-promo-15.webp" alt="1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-16.webp" alt="2">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-17.webp" alt="3">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/galeria/img-promo-18.webp" alt="4">
+                    </li>
+                    <li class="carousel-slide is-selected">
+                        <img src="img/galeria/img-promo-19.webp" alt="5">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel-btn next" aria-label="Foto siguiente">›</button>
+        </div>
+        <!-- numeros para el carousel-->
+        <div class="carousel-dots">
+            <button class="carousel-dot is-selected" aria-label="Ir a la foto 1"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 2"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 3"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 4"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 5"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 6"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 7"></button>
+
+            <!-- si esta lento desde qutar desde aqui-->
+
+            <button class="carousel-dot" aria-label="Ir a la foto 8"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 9"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 10"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 11"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 12"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 13"></button>
+
+            <button class="carousel-dot" aria-label="Ir a la foto 14"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 15"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 16"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 17"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 18"></button>
+            <button class="carousel-dot" aria-label="Ir a la foto 19"></button>
+        </div>
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section-alt">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>
+                Encuéntranos, conócenos y síguenos.
+            </p>
+
+            <div class="contact-grid">
+                <div>
+                    <h3>Dirección</h3>
+                    <p>Mahahual, Costa maya, México.</p>
+                </div>
+                <div>
+                    <h3>Horario</h3>
+                    <p>Lunes a domingo: 12:00 pm - 11:00 pm</p>
+                </div>
+                <div>
+                    <h3>Teléfono / WhatsApp</h3>
+                    <p>+52 983 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX GALERÍA -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Cerrar imagen">×</button>
+            <img src="" alt="" id="lightbox-image">
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Proyecto para Adriana Galaviz Lopez - "El Gran Nohoch Kay" -
+                <strong>Desarrollado por el ING. Luis Lopez.</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Año actual footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Menú móvil
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        // Cerrar menú al hacer clic en un link (en móvil)
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+            });
+        });
+
+
+        // ====== CARRUSEL GALERÍA ======
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+        const prevButton = document.querySelector('.carousel-btn.prev');
+        const nextButton = document.querySelector('.carousel-btn.next');
+        const dotsNav = document.querySelector('.carousel-dots');
+        const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+
+        let currentIndex = 0;
+
+        function updateCarousel(index) {
+            const amountToMove = -index * 100; // porcentaje
+            track.style.transform = `translateX(${amountToMove}%)`;
+
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('is-selected', i === index);
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('is-selected', i === index);
+            });
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel(currentIndex);
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel(currentIndex);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                currentIndex = i;
+                updateCarousel(currentIndex);
+            });
+        });
+
+
+        // ====== LIGHTBOX GALERÍA ======
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-image');
+        const lightboxClose = document.querySelector('.lightbox-close');
+
+        // Al hacer clic en cualquier imagen del carrusel, se abre grande
+        slides.forEach(slide => {
+            const img = slide.querySelector('img');
+            img.style.cursor = 'zoom-in'; // detalle visual
+
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt || '';
+                lightbox.classList.add('open');
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+
+        // Cerrar si hacen clic fuera de la imagen
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
