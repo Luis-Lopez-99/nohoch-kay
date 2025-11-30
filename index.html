@@ -35,7 +35,6 @@
         </nav>
     </header>
 
-
     <!-- HERO -->
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
@@ -62,9 +61,14 @@
         <h2>Nuestro menú</h2>
         <p>
             Del mar a tu mesa: pescados, mariscos frescos, platillos tradicionales y
-            especialidades de la casa. Consulta el menú completo:
+            especialidades de la casa.
         </p>
-        <a href="menu.html" class="btn-outline">Ver menú</a>
+        <p>
+            <strong>
+            Consulta el menú completo:
+        </strong>
+        </p>
+        <a href="menu.html" class="btn-secondary">Ver menú</a>
     </section>
 
     <!-- RESERVACIONES -->
@@ -152,7 +156,6 @@
                     <li class="carousel-slide">
                         <img src="img/galeria/img-promo-14.webp" alt="7">
                     </li>
-
                     <li class="carousel-slide is-selected">
                         <img src="img/galeria/img-promo-15.webp" alt="1">
                     </li>
@@ -191,13 +194,34 @@
             <button class="carousel-dot" aria-label="Ir a la foto 11"></button>
             <button class="carousel-dot" aria-label="Ir a la foto 12"></button>
             <button class="carousel-dot" aria-label="Ir a la foto 13"></button>
-
             <button class="carousel-dot" aria-label="Ir a la foto 14"></button>
             <button class="carousel-dot" aria-label="Ir a la foto 15"></button>
             <button class="carousel-dot" aria-label="Ir a la foto 16"></button>
             <button class="carousel-dot" aria-label="Ir a la foto 17"></button>
             <button class="carousel-dot" aria-label="Ir a la foto 18"></button>
             <button class="carousel-dot" aria-label="Ir a la foto 19"></button>
+        </div>
+    </section>
+
+    <!-- REDES SOCIALES -->
+    <section id="redes" class="section container redes">
+        <h2>Síguenos en nuestras redes</h2>
+        <p>
+            Mantente al día con nuestras promociones, eventos y novedades.
+        </p>
+
+        <div class="social-links">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/1aspbz9GFt/?mibextid=wwXIfr" target="_blank" rel="noopener"
+                class="social-icon">
+                <img src="img/icons/facebook_96.webp" alt="Facebook">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/nohochkaybeach?igsh=MW40Mjd2a3Z1aHR3aw==" target="_blank" rel="noopener"
+                class="social-icon">
+                <img src="img/icons/instagram_96.webp" alt="Instagram">
+            </a>
         </div>
     </section>
 
@@ -213,20 +237,31 @@
             <div class="contact-grid">
                 <div>
                     <h3>Dirección</h3>
-                    <p>Mahahual, Costa maya, México.</p>
+                    <p>Avenida mahahual Mz 20, Lt 3, Centro, 77976 Mahahual, Q.Roo, México.</p>
                 </div>
                 <div>
                     <h3>Horario</h3>
-                    <p>Lunes a domingo: 12:00 pm - 11:00 pm</p>
+                    <p>Lunes a domingo: 7:00 AM - 8:00 PM</p>
                 </div>
                 <div>
                     <h3>Teléfono / WhatsApp</h3>
-                    <p>+52 983 123 4567</p>
+                    <p>+52 983 320 3846</p>
+                </div>
+            </div>
+            <!-- Mapa -->
+            <div class="map-section">
+                <h3>Como llegar?</h3>
+                <div class="map-wrapper">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d944.7206474092039!2d-87.70959452135676!3d18.71407395983763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5b2610fbded89b%3A0xa9aa0caeb85a2ce8!2sNohoch%20Kay!5e0!3m2!1ses-419!2smx!4v1764469557649!5m2!1ses-419!2smx"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
-    </section>
 
+    </section>
     <!-- LIGHTBOX GALERÍA -->
     <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
@@ -235,11 +270,11 @@
         </div>
     </div>
 
-
     <!-- FOOTER -->
     <footer class="main-footer">
         <div class="container">
-            <p>© <span id="year"></span> Proyecto para Adriana Galaviz Lopez - "El Gran Nohoch Kay" -
+            <p>© <span id="year"></span> Proyecto para Adriana Galaviz Lopez & Andrea Shania Benitez Bautista- "El Gran
+                Nohoch Kay" -
                 <strong>Desarrollado por el ING. Luis Lopez.</strong>
             </p>
         </div>
@@ -263,7 +298,6 @@
                 navLinks.classList.remove('open');
             });
         });
-
 
         // ====== CARRUSEL GALERÍA ======
         const track = document.querySelector('.carousel-track');
